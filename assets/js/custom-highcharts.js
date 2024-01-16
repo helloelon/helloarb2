@@ -33,16 +33,16 @@ $(document).ready(function () {
 			name: 'Brands',
 			colorByPoint: true,
 			data: [{
-					name: 'Fundraiser',
+					name: 'Development',
 					y: 10.00,
 
 				}, {
-					name: 'Long Term Budget',
-					y: 30.00,
+					name: 'IDO & Marketing',
+					y: 25.00,
 
 				}, {
-					name: 'Founders,Team & Advisors',
-					y: 10.00,
+					name: 'Team & Reserve',
+					y: 15.00,
 
 				},
 				{
@@ -113,7 +113,7 @@ $(document).ready(function () {
 					y: 30.00,
 
 				}, {
-					name: 'Bancor ETH Reserve',
+					name: 'Reserve',
 					y: 10.00,
 
 				}, {
@@ -122,7 +122,7 @@ $(document).ready(function () {
 
 				},
 				{
-					name: 'Marketing  ',
+					name: 'Repurchase',
 					y: 50.00,
 
 				}
