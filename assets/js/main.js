@@ -214,7 +214,9 @@ $(document).ready(function () {
 	function makeTimer() {
 		var endTime = new Date("2024-01-23  23:59:59");
 		endTime = (Date.parse(endTime) / 1000);
-
+		if ( endTime <= new Date().getTime() ){
+			return
+		}
 		var now = new Date();
 		now = (Date.parse(now) / 1000);
 
@@ -224,6 +226,18 @@ $(document).ready(function () {
 		var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
 		var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
 		var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+		if ( days <0 ){
+			days = 0
+		}
+		if ( hours <0 ){
+			hours = 0
+		}
+		if ( minutes <0 ){
+			minutes = 0
+		}
+		if ( seconds <0 ){
+			seconds = 0
+		}
 		if (days < 10) {
 			days = "0" + days;
 		}
